@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Website</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	 <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!----header design--->
+	<header>
+		<a href="#" class="logo"><span>Portfolio</span></a>
+
+		<ul class="navlist">
+			<li><a href="#home" class="active">Home</a></li>
+			<!-- <li><a href="#about">About Me</a></li> -->
+			<!-- <li><a href="#services">Services</a></li> -->
+			<li><a href="#portfolio">Projects</a></li>
+			<li><a href="#skillset">Skills</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+
+		<div class="bx bx-menu" id="menu-icon">
+			
+		</div>
+	</header>
+
+	<!----home section design--->
+	<section class="home" id="home">
+		<!-- <div class="social">
+			<a href="#"><i class='bx bxl-github'></i></a>
+			<a href="#"><i class='bx bxl-instagram'></i></a>
+			<a href="#"><i class='bx bxl-facebook'></i></a>
+		</div> -->
+		<div class="home-img">
+			<img src="59401.png" alt="">
+		</div>
+		<div class="home-text">
+			<span>Hello, I'm</span>
+			<h1>Navin Kumar</h1>
+			<h2>Data Science Enthusiast</h2>
+			<p>"Hi, my name is Navin Kumar and I am a recent graduate in computer science from Anna University. After completing my degree in 2020, I took a year to focus on preparing for competitive exams. However, my passion for data science led me to pursue further education through a course at Guvi in partnership with IIT Madras. I am now eager to put my skills and knowledge to use by finding a job opportunity in the data field."</p>
+			<div class="info-box">
+				<i class='bx bxs-phone'></i>
+				+91-9551578352
+			</div>
+		
+			<div class="info-box">
+				<i class='bx bxs-envelope'></i>
+				navinulchemy@gmail.com
+			</div>
+			<div>
+				<!-- <button class="btn"><a class ='btn11' href="res.pdf" download>Download CV</a></button> -->
+				<a href="resume.pdf" download class="neon-button">Download CV</a>
+			</div>
+			
+			
+		</div>
+		
+	</section>
+	<!-- <section class="home" id="home">
+		<div class="home-text">
+			<div class="slide">
+				<span class="one">Hello, Iam</span> -->
+				<!-- <span class="two">I'm</span> -->
+			<!-- </div>
+			<h1>Navin kumar</h1>
+			<h3><span> Data Enthusiast.</span></h3>
+			<p>Web Developer with 5+ years experience that keep customers <br> coming back for about services makes best effort.</p> -->
+			<!-- <div class="button">
+				<a href="#" class="btn">Say Hello</a>
+				<a href="#" class="btn2"><span><i class='bx bx-play'></i></span>Watch My Work</a>
+			</div> -->
+		<!-- </div>
+	</section> -->
+
+	<!----about section design--->
+	<!-- <section class="about" id="about">
+		<div class="about-img">
+			<img src="about.jpg">
+		</div>
+
+		<div class="about-text">
+			<h2>About <span>Me</span></h2>
+			<h4></h4>
+			<p>"Hi, my name is Navin Kumar and I am a recent graduate in computer science from Anna University. After completing my degree in 2020, I took a year to focus on preparing for competitive exams. However, my passion for data science led me to pursue further education through a course at Guvi in partnership with IIT Madras. I am now eager to put my skills and knowledge to use by finding a job opportunity in the data field."</p> -->
+			<!-- <a href="#" class="btn">More About</a> -->
+		<!-- </div>
+	</section> -->
+    <!----portfolio section design--->
+	<section class="portfolio" id="portfolio">
+		<div class="main-text">
+			<!-- <p>Portfolio</p> -->
+			<h2><span>Projects</span></h2>
+		</div>
+        
+		<div class="portfolio-content">
+			<div class="row">
+				<img src="chatbot.png">
+				<div class="layer">
+					<h5>Conversational Chatbot</h5>
+					<p>Crafted and integrated a conversational chatbot that swiftly responds to user inquiries by accurately identifying the tag of the text data.
+						created a JSON file, partitioned with curated selection of tags, queries, and responses. Utilized bag-of-words techniques to train an Artificial Neural Network (ANN) on the text corpus, achieving a flawless accuracy of 100% within 200 epochs.
+						Utilized the pre-trained model to predict the results of new text data, successfully identifying the tags and pulling the appropriate response from the JSON file.
+						Constructed a user-friendly conversational application with help of Tkinter, enabling seamless communication between the user and the bot.
+						</p>
+						
+						<a href="https://github.com/Navinulchemy/conversational-chatbot" target="_blank" rel="noopener"><i class='bx bx-link-external' href="https://github.com/Navinulchemy" ></i></a>
+				</div>
+			</div>
+			<script type="text/javascript">
+				// Get a reference to the LinkedIn link
+				var githubLink1 = document.getElementById('bx bx-link-external');
+				
+				// Add an event listener to open the LinkedIn link in a new tab
+				githubLink1.addEventListener("click", function(event) {
+				  event.preventDefault();
+				  window.open(event.target.href, "_blank");
+				});
+            </script>
+			<div class="row">
+				<img src="mask.jpeg">
+				<div class="layer">
+					<h5>Face Mask Detection</h5>
+					<p>Developed an image classification model using MobileNet as a base, with additional fully connected layers added to classify whether a person in an image is wearing a face mask or not .
+						The trained model achieved an accuracy of 100% on the training data and 98% on the validation data within 10 epochs.
+						Implemented face detection using OpenCV's Haar cascade classifier model to detect human faces from a live webcam feed.
+						Utilized the trained classification model to classify the presence of a face mask in the detected faces.
+						Then displayed a rectangle using x & y coordinates along with text 'mask on or off’ with unique color for each label based on the results predicted by the trained model.
+					</p>
+						<a href="https://github.com/Navinulchemy/Face-mask-detection" target="_blank" rel="noopener"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+			<script type="text/javascript">
+				// Get a reference to the LinkedIn link
+				var githubLink1 = document.getElementById('bx bx-link-external');
+				
+				// Add an event listener to open the LinkedIn link in a new tab
+				githubLink1.addEventListener("click", function(event) {
+				  event.preventDefault();
+				  window.open(event.target.href, "_blank");
+			</script>	
+			<div class="row">
+				<img src="sentiment.png">
+				<div class="layer">
+					<h5>Sentiment Analysis</h5>
+					<p>Developed a classification model using LSTM to identify the sentiment of text sequences as either positive or negative.
+						Conducted data pre-processing on over 1 lac+ records, which includes cleaning, tokenization, lemmatization and calculating sentiment score using VADER method for training the model.
+						Performed some simple exploratory data analysis and transformed the data to one hot form for converting them into word embeddings using traditional method.
+						The model achieved an accuracy of 93% on training data and 84% on validation data, and was used to build a web application for classifying text input using Flask.
+						
+					</p>
+					<a href="https://github.com/Navinulchemy/Sentiment-Analysis" target="_blank" rel="noopener"><i class='bx bx-link-external' ></i></a>
+				    
+					</div>
+			</div>
+            <script type="text/javascript">
+				// Get a reference to the LinkedIn link
+				var githubLink1 = document.getElementById('bx bx-link-external');
+				
+				// Add an event listener to open the LinkedIn link in a new tab
+				githubLink1.addEventListener("click", function(event) {
+				  event.preventDefault();
+				  window.open(event.target.href, "_blank");
+			</script>
+			<div class="row">
+				<img src="imageclass.jpg">
+				<div class="layer">
+					<h5>Image Classification</h5>
+					<p>Designed and implemented a CNN model using transfer learning approach on 3,300 images divided by 6 classes denoting weather conditions
+					   Utilized a pre-trained ResNet50 model and made architectural modifications to build a hybrid model that accurately classifies weather labels of the image data.
+					   Obtained a training accuracy of 98% and validation accuracy of 91% indicating a well-balanced model.
+					   Integrated the previously built model into a web app using the streamlit framework. 
+                    </p>
+					<a href="https://github.com/Navinulchemy/Image-Classification-transfer-learning-" target="_blank" rel="noopener"><i class='bx bx-link-external' ></i></a>
+				</div>
+			</div>
+            <script type="text/javascript">
+				// Get a reference to the LinkedIn link
+				var githubLink1 = document.getElementById('bx bx-link-external');
+				
+				// Add an event listener to open the LinkedIn link in a new tab
+				githubLink1.addEventListener("click", function(event) {
+				  event.preventDefault();
+				  window.open(event.target.href, "_blank");
+				});
+            </script>
+			
+			
+			
+			
+			
+	        <div class="button">
+				<a href="https://github.com/Navinulchemy" target="_blank" rel="noopener" class="btn2"><span><i class='bx bx-play'></i></span>View More Projects</a>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="skillset" id="skillset">
+	 <div class="skills-text">
+		<h2><span>Skills</span></h2>	
+		
+	 </div>
+	 <ul class="skills">
+      <li>Machine learning</li>
+      <li>Python</li>
+	  <li>MY SQL</li>
+      <li>Data Analysis</li>
+	  <li>NLP</li>
+	  <li>Deep learning</li>
+	  <li>Keras/Tensorflow</li>
+	  <li>Computer Vision</li>
+      <li>Web Scraping</li>
+      <li>Streamlit</li>
+	  <li>Flask</li>
+	  <li>Pyspark</li>
+    </ul>
+		
+	</section>
+    <!----contact section design--->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact Me!</h2>
+		<h4>Linkedn : <span ><a class="details" href="https://www.linkedin.com/in/navinkumar98/" target="_blank" rel="noopener">www.linkedin.com/in/navinkumar98/</a></span></h4>
+		<h4>Github : <span ><a class="details" href="https://github.com/Navinulchemy" target="_blank" rel="noopener">https://github.com/Navinulchemy</a></span></h4>
+		<h4>Gmail : <span class="cc">navinulchemy@gmail.com</span></h4>
+       
+        <h4>Mobile : <span class="cc">+91-9551578352</span></h4>
+        
+
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/navinkumar98/"  target="_blank" rel="noopener"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/Navinulchemy"  target="_blank" rel="noopener"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/"  target="_blank" rel="noopener"><i class='bx bxl-instagram-alt' ></i></a>
+            
+        </div>
+       </div>
+
+    </section>
+
+	<!----end section design--->
+
+	<section class="end">
+		<div class="last-text">
+			<p>Copyright © 2022 by Navin Kumar All Rights Reserved.</p>
+		</div>
+
+		<div class="top">
+			<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
+	</section>
+
+	<!---custom js link--->
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
